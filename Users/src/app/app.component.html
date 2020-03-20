@@ -1,0 +1,19 @@
+<mdb-navbar SideClass="navbar navbar-expand-lg waves-effect waves-light navbar-blue black" [containerInside]="false">
+
+  <mdb-navbar-brand>
+    <mdb-icon fas icon="home" class="primary-color"></mdb-icon>
+    <a routerLink="/home" class="navbar-light"> Home
+    </a>
+  </mdb-navbar-brand>
+  <links>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a routerLink="/addnewuser" class="nav-link waves-effect waves-light" mdbWavesEffect routerLinkActive="active">
+          Add A New User
+          <mdb-icon fas icon="plus-circle"></mdb-icon>
+          <span class="sr-only"></span></a>
+      </li>
+    </ul>
+  </links>
+</mdb-navbar>
+<router-outlet></router-outlet>

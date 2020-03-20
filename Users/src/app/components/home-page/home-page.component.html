@@ -1,0 +1,11 @@
+<table mdbTable striped="true">
+  <tbody>
+  <tr *ngFor="let user of users" >
+    <td bgcolor="#f0f8ff">
+      <a style="color:deepskyblue" class="d-block justify-content-center text-md-center" routerLink="/userdetails/{{user.id}}">{{user.id}}) {{user.name}}
+        <mdb-icon fas icon="info-circle"></mdb-icon>
+      </a>
+    </td>
+  </tr>
+  </tbody>
+</table>

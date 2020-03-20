@@ -1,0 +1,35 @@
+<mdb-card class="m-3 black">
+
+  <mdb-card-header class="primary-color d-flex justify-content-center">
+    {{user.name}} Details
+  </mdb-card-header>
+
+  <mdb-card-body>
+    <mdb-card-body>
+      <mdb-card-title class="d-flex justify-content-center">
+        <h4 class="white-text">Name: {{user.name}}</h4>
+      </mdb-card-title>
+      <mdb-card-text class="d-flex justify-content-center">
+        <div>
+          <label class="blue-text">Email : {{user.email}}</label>
+          <br>
+          <label class="blue-text">Age : {{user.age}} </label>
+          <br>
+          <label class="blue-text"> Gender : {{user.gender}}</label>
+          <br>
+          <label class="blue-text">Information : {{user.userinfo}}</label>
+        </div>
+      </mdb-card-text>
+    </mdb-card-body>
+  </mdb-card-body>
+  <mdb-card-footer class="d-flex justify-content-center">
+    <a routerLink="/home" mdbBtn color="red" mdbWavesEffect (click)="deleteUser($event)">
+      Delete {{user.name}}
+      <mdb-icon fas icon="poo"></mdb-icon>
+    </a>
+    <a routerLink="/userdetails/{{user.id}}/edit" mdbBtn color="blue" mdbWavesEffect>
+      Edit {{user.name}} Details
+      <mdb-icon fas icon="edit"></mdb-icon>
+    </a>
+  </mdb-card-footer>
+</mdb-card>
